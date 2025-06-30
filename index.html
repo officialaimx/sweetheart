@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorry Sweetheart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    /* Background Image */
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/sh.jpg') no-repeat center center;
+      background-size: cover;
+      z-index: -2;
+      filter: brightness(0.7);
+    }
+
+    /* Flower Overlay */
+    .background-flower {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://cdn.pixabay.com/photo/2016/03/27/22/16/flower-1283608_960_720.png') repeat;
+      background-size: 200px;
+      opacity: 0.05;
+      z-index: -1;
+      pointer-events: none;
+      animation: backgroundScroll 60s linear infinite;
+    }
+
+    @keyframes backgroundScroll {
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 1000px; }
+    }
+
+    /* Message Box Styling */
+    .message-box {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 99;
+      max-width: 90%;
+      text-align: center;
+      background: rgba(255,255,255,0.85);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px pink;
+      font-family: 'Poppins', sans-serif;
+      color: #4e0035;
+    }
+
+    .message-box h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem;
+      color: #b30059;
+      margin-bottom: 10px;
+    }
+
+    .message-box p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .message-box a {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #b30059;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #b30059;
+    }
+
+    .message-box a:hover {
+      background: #99004d;
+      box-shadow: 0 0 20px #ff4da6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Image -->
+  <div class="background-image"></div>
+
+  <!-- Animated Flower Layer -->
+  <div class="background-flower"></div>
+
+  <!-- Message Content -->
+  <div class="message-box">
+    <h1>Sorry Sweetheart 💌</h1>
+    <p>
+      This message is for you, <strong>Kanishka</strong>.<br><br>
+      I don't know if I should say sorry or something else,<br>
+      but I just needed to be a little alone for a while.<br><br>
+      I know you can't understand why I am doing this,<br>
+      but I just needed some time to think. I hope you can understand.<br><br>
+      I am really sorry if I hurt you. I hope you can forgive me.<br><br>
+      I love you so much and I’m really sorry for everything.<br>
+      If you don’t want to talk to me, I will feel bad, but I will understand.<br><br>
+      I wanted to add your pictures here, but you made me delete all of them.<br>
+      Only memories are left now... 🌸<br><br>
+      This page was really hard for me, but it holds all my feelings... for you. ❤️
+    </p>
+    <a href="https://wa.me/919410001304?text=Hi%20Nazim%2C%20main%20tumse%20baat%20karna%20chahti%20hoon%20%E2%9D%A4%EF%B8%8F" target="_blank">
+      Let's clear 🌸
+    </a>
+  </div>
+</body>
+</html>
